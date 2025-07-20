@@ -1,0 +1,987 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/2025-06-20\ at\ 18.58.45_45889035.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    
+
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+.home-content{
+    width: 700;
+    height: 10px;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title{
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(0, 0, 0,0.8);
+    position: fixed;
+    z-index: 50;
+
+}
+
+
+.input {
+  width: 240px;
+  height: 30px;
+  border-radius: 25px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding-left: 35px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+
+
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+}
+
+.search i {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  color: black;
+  pointer-events: none;
+}
+
+
+.list{
+    list-style: none;
+    float: left;
+    margin-left: 600px;
+    margin-top: -25;
+}
+
+
+.list li{
+    display: inline;
+    color: white;
+    margin-left: 50px;
+    position: relative;
+
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+.list li a:hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: blue;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.list li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background:blue;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.list li a:hover:after {
+    width: 100%;
+}
+
+
+
+.class-img{
+    width: 35;
+    height: 35;
+    margin-left: 60;
+   margin-top: 5;
+   float: left;
+    
+}
+
+
+
+.btn1{
+    width: 110px;
+    height: 50;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 10px;
+    
+
+}
+.btn2{
+
+    width: 110px;
+    height: 50;
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.btn1:hover{
+   opacity: 0.4;
+}
+.btn2:hover{
+    opacity: 0.3;
+    
+}
+
+
+.website{
+    font-size: 40px;
+    margin-left: 600px;
+    margin-top: 100px;
+
+}
+.website-p{
+    width: 90px;
+    height: 3px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 700px;
+    
+}
+.welcom-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 100;
+    margin-left: 200px;
+    
+}
+.welcom-parent{
+   overflow: auto;
+
+}
+    
+
+.welcom-item{
+    float: left;
+    width: 40%;
+    width: 300px;
+    height: 220;
+    padding: 18px 14px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+
+}
+.item2{
+    margin: 0px 10%;
+}
+.welcom-h3{
+    font-size: 25px;
+   
+}
+.welcom-p{
+    margin-top: 40px;
+    color: grey;
+    text-transform: capitalize;
+
+}
+.welcom-a{
+    text-decoration: none;
+    color: aqua;
+    
+}
+.welcom-icon i{
+    font-size: 30px;
+    color: aqua;
+    
+}
+
+.welcom-item:hover h3{
+    color: aqua;
+}
+.welcom-item:hover p{
+    color: black;
+}
+
+
+.welcom-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+.welcom-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.div{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 350px;
+
+}
+.worked-p{
+    width: 100px;
+    height: 3px;
+    background-color: aqua;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+
+.feature-container{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 255, 255,0.18);
+    height: 800px;
+
+    
+}
+.feature-parent{
+   overflow: auto;
+   margin-left: 400px;
+   margin-top: 80px;
+   width: 80%;
+}
+
+.feature-item{
+    float: left;
+    width: 20%;
+    
+}
+.tem2{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+
+.feature-parent2{
+    overflow: auto;
+   margin-left: 400px;
+   margin-top: 30px;
+   width: 80%;
+}
+.feature-img{
+    width: 90%;
+    margin: auto;
+    position: relative; 
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(128, 128, 128,0.7);
+    visibility: hidden;
+    text-align: center;
+    
+}
+.feature-item:hover .feature-icon{
+    visibility: visible;
+
+}
+.feature-h2{
+   margin-top: 25px;
+   font-size: 40px;
+   color: black;
+   
+}
+.feature-p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.feature-icon a{
+    color: black;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    
+}
+.feature-icon a i{
+    margin-top: 30px;
+    width: 40px;
+    height: 50px;
+   
+
+}
+.div1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+
+}
+.offer{
+    width: 70px;
+    height: 3px;
+    background-color: aqua;
+    margin-left: 720px
+}
+.what-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+.what-parent1{
+    overflow: auto;
+    margin-left: 300px;
+    width: 100%;
+}
+.what-item{
+    float: left;
+    height: 200px;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px 30px;
+    position: relative;
+   
+}
+.item3{
+    margin: 0 5%;
+
+}
+.what-icon a i{
+    position: absolute;
+    right: 270px;
+    top: 30px;
+    left: 10px;
+    font-size: 30px;
+    color: aqua;
+    
+}
+.what-info{
+    position: absolute;
+    left: 50px;
+}
+.what-info p{
+    color: grey;
+}
+.what-item:hover h2{
+    color: aqua;
+}
+.what-item:hover p{
+    color: black;
+}
+.what-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+.what-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+.what-parent2{
+     overflow: auto;
+    margin-left: 300px;
+     width: 100%;
+     margin-top: 50px;
+
+
+}
+.why-container{
+    width: 90%;
+    margin: auto;
+   
+   
+}
+.why-parent{
+    width: 100%;
+    margin-top: 200;
+    overflow: auto;
+    margin-left: 50px;
+   
+    
+}
+.why-info h2{
+    font-size: 50px;
+    text-transform: capitalize;
+
+}
+.why-h3{
+    width: 70px;
+    height: 3.5px;
+    margin-left:10px ;
+    background-color: aqua;
+    margin-top: 10px;
+}
+.choose-p{
+    margin-top: 40px;
+}
+
+.why-info{
+    margin-left: 10;
+    margin-top: 30px;
+}
+
+ .why-info i{
+    margin-top: 35px;
+    color: aqua;
+  
+ }
+.why-img{
+    margin-left: 800px;
+    margin-top: -400;
+}
+.why-icon {
+  display: inline;
+}
+.dots {
+  margin-top: 15px; 
+  display: flex;
+  margin-left: 180px;
+  
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: grey;
+  margin-left: 10px;
+}
+
+.dot.active {
+  background-color: aqua;
+}
+.dot:hover{
+   background-color: aqua;
+}
+
+.happy-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 300px;
+}
+
+
+.happy-parent{
+    background-image: url(../images/WhatsApp\ Image\ 2025-07-10\ at\ 19.26.34_694d90e3.jpg);
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.happy-item{
+    float: left;
+    width: 100;
+    margin-left: 220px;
+    margin-top: 160px;
+    text-align: center;
+}
+.happy-icon i{
+    font-size: 40px;
+    color: aqua;
+}
+.happy-info{
+    margin-top: 20px;
+    color: white;
+}
+
+.price{
+    font-size: 30px;
+     margin-top: 100px;
+    text-align: center;
+}
+.price-p{
+    width: 100;
+    height: 3;
+    background-color: aqua;
+    margin-left: 700px;
+    margin-top: 5;
+}
+
+.price-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.price-parent{
+    overflow: auto;
+}
+.price-item{
+    float: left;
+    width: 30%;
+    height: 400;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+}
+.item4{
+    margin: 0 5%;
+
+}
+.price-item h4{
+    margin-top: 20px;
+
+}
+.price-div{
+    width: 100;
+    height: 100;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 14px 18px;
+    margin: auto;
+    margin-top: 20px;
+}
+.price-item > p {
+    margin-top: 25px;
+
+}
+.price-item:hover h4{
+    color: aqua;
+
+}
+.price-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    border-radius: 15px;
+    z-index: -1;
+
+}
+.price-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.7s;
+}
+.price-item button{
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.market-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 300px;
+}
+
+
+.market-parent{
+    background-image: url(../images/WhatsApp\ Image\ 2025-07-10\ at\ 19.26.34_694d90e3.jpg);
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.market-item{
+    float: left;
+    width: 30%;
+    margin-left: 250px;
+    margin-top: 120px;
+}
+.market-item img{
+    width: 70;
+    height: 70;
+    border-radius: 50%;
+}
+.market-item h3{
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: -60px;
+    text-transform: capitalize;
+    color: white;
+}
+.market-item h4{
+     margin-left: 80px;
+     font-size: 20px;
+     color: rgb(6, 6, 67);
+     margin-top: 5px;
+}
+.market-item p{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-start{
+    margin-left:600 ;
+
+    margin-top: 130px;
+}
+.p{
+    width: 90;
+    height: 3;
+    background-color: aqua;
+    margin-left: 70;
+    
+}
+.h2{
+    font-size: 50;
+
+}
+.team-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    
+    margin-top: 30;
+}
+.team-p{
+    color: gray;
+    margin-top: 20px;
+}
+.team-item h2{
+    margin-top: 10px;
+  
+}
+.team-parent{
+  overflow: auto;
+}
+.team-item{
+    float: left;
+    background-color: rgba(128, 128, 128,0.3);
+    width: 30%;
+    height: 300px;
+    padding: 18px 14px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+}
+.item2{
+    margin: 0px 5%;
+}
+.team-img{
+    background-color: gray;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+
+}
+.team-item:hover .team-icon{
+    visibility:visible;
+    opacity: 0.5;
+}
+
+
+
+.team-icon a{
+    display: block;
+    width: 40;
+    height: 40;
+    font-size: 30;
+    margin-left: auto;
+    background-color: rgb(32, 32, 220);
+    color: white;
+}
+.team-icon a i{
+    line-height: 40px;
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    border-radius: 10px;
+
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.team-item:hover .team-p{
+    color: black;
+
+}
+.team-item:hover h2 {
+    color: white;
+}
+.resent-start{
+    margin-left:600 ;
+    margin-top: 250px;
+    font-size: 30;
+
+}
+.resent-new{
+    width: 100;
+    height: 3;
+    background-color: aqua;
+    margin-left: 100;
+    margin-top: 10px;
+
+}
+
+.resent-container{
+    width: 80%;
+    margin: auto;
+}
+.resent-parent{
+   overflow: auto;
+   margin-top: 50px;
+   width: 100%;
+}
+.resent-item{
+    float: left;
+    width: 30%;
+    height: 510px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+   
+}
+.resent-item p{
+    color: gray;
+}
+
+.item5{
+    margin: 0 5%;
+}
+
+.resent-img img{
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+
+}
+.resent-icon i{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: aqua;
+}
+.resent-info h2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.resent-info p  {
+    margin-top: 20px;
+}
+.resent-info a{
+    text-decoration: none;
+    margin: auto;
+    color: aqua;
+    
+}
+.resent-item:hover p{
+    color: aqua;
+}
+.resent-item:hover h2{
+    color:white; 
+
+}
+
+.resent-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.resent-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.8s;
+}
+
+
+.all-container{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 255, 255,0.4);
+    
+}
+.all-parent{
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.all-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -20px;
+
+}
+.all-img img{
+    border: 0;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.all-icon{
+    margin-top: 20px;
+}
+.all-icon i{
+    font-size: 35px;
+    background-color: rgb(0, 0, 255,0.5);
+    width: 60;
+    height: 60;
+    border-radius: 50%;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+
+}
+.all-item p{
+   text-align: center;
+   margin-top: 10px;
+}
+ .all-icon i:hover {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
